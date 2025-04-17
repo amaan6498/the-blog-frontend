@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: #090d1f;
+}
+
+/* Container for the blog form */
+.add-blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 66vh;
+    background-color: #090d1f;
+    padding: 2rem;
+  }
+  
+  /* Heading styles */
+  .add-blog-heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .add-blog-subtitle {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Form container */
+  .add-blog-form {
+    background-color: #0f132d;
+    border: 1px solid #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Labels */
+  .add-blog-label {
+    color: #f4f4f4;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Input and textarea fields */
+  .add-blog-input,
+  .add-blog-textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #12172f;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    box-sizing: border-box;
+  }
+  
+  .add-blog-input:focus,
+  .add-blog-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button */
+  .add-blog-button {
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-blog-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message */
+  .add-blog-error {
+    margin-top: 1rem;
+    color: red;
+    text-align: center;
+  }
+  
+  

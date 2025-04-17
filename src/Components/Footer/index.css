@@ -1,0 +1,32 @@
+
+.footer-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #090d1f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    z-index: 100;
+  }
+  
+  .footer-container svg {
+    margin: 0 15px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-container svg:hover {
+    color: #f1f1f1;
+  }
+
+.footer-link:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+

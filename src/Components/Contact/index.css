@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Libre+Baskerville&display=swap');
+
+body {
+    margin: 0;
+    background-color: #090d1f;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 76vh;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #f4f4f4;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f4f4f4;
+}
+
+.contact-form-label {
+    font-size: 1rem;
+    color: #f4f4f4;
+    margin-bottom: 0.5rem;
+}
+
+.contact-input, textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #f4f4f4;
+    background-color: transparent;
+}
+
+.contact-input:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px (Tablets and smaller screens) */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.5rem; /* Reduce title size for small screens */
+        text-align: center; /* Center-align the title */
+    }
+
+    .contact-form {
+        width: 90%; /* Make the form width smaller */
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .contact-input, textarea {
+        font-size: 0.9rem; /* Reduce input font size */
+        padding: 0.7rem; /* Reduce padding in input fields */
+    }
+
+    button {
+        font-size: 0.9rem; /* Smaller button font size */
+        padding: 0.7rem; /* Reduce button padding */
+    }
+}
+
+/* For screens smaller than 480px (Mobile Phones) */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.25rem; /* Further reduce title size for mobile */
+    }
+
+    .contact-form {
+        width: 95%; /* Make form almost full-width on mobile */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .contact-input, textarea {
+        font-size: 0.875rem; /* Reduce font size further */
+        padding: 0.6rem; /* Reduce padding further */
+    }
+
+    button {
+        font-size: 0.875rem; /* Reduce button font size further */
+        padding: 0.6rem; /* Further reduce padding */
+    }
+}

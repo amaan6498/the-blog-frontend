@@ -1,0 +1,64 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Libre+Baskerville&display=swap');
+
+.nav-container {
+    position: sticky;
+    top: 3%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: transparent; /* Initial background color */
+    border-radius: 25px;
+    padding: 10px 20px;
+    z-index: 10;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition for background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Libre Bakerville";
+    border: 1px solid #fff;
+  }
+
+  .nav-container.blur {
+    background-color: rgba(255, 255, 255, 0.5); /* Light semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+  }
+  
+  .nav-header {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    color: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .nav-list li:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Change background to transparent after scroll past 100vh */
+  .nav-container.transparent {
+    background-color: transparent;
+  }
+  
+.link-nav{
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.link-button{
+  background-color: transparent;
+  border: none;
+}

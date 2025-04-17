@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Libre+Baskerville&display=swap');
+
+body{
+    margin: 0;
+    background-color: #090d1f;
+}
+
+.about-cotainer{
+    margin-top: 5%;
+    font-family: "Inter";
+    color: #f4f4f4;
+}
+
+.about-head{
+    text-align: center;
+    font-size: 10rem;
+    color: #f4f4f4;
+}
+
+.hr-top{
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+.hr-bottom{
+    margin-top: -5%;
+}
+
+.blob-head{    
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.blob-para{
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 2rem;
+    width: 75%;
+    margin: 0 auto;
+}
