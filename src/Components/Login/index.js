@@ -38,7 +38,7 @@ const Login = () => {
     };
     console.log(data);
     try {
-      const response = await fetch("http://localhost:5000/login", {
+      const response = await fetch("https://blog-api-qyqz.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

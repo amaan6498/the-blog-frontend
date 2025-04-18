@@ -35,14 +35,17 @@ const Signup = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-        mode: "cors", // Explicitly enabling CORS
-      });
+      const response = await fetch(
+        "https://blog-api-qyqz.onrender.com/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+          mode: "cors", // Explicitly enabling CORS
+        }
+      );
       if (!response.ok) {
         // If the response is not OK, show an error message
         const errorData = await response.json();

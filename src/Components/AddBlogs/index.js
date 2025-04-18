@@ -44,14 +44,17 @@ const AddBlogs = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/addblog", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(blogData),
-        mode: "cors",
-      });
+      const response = await fetch(
+        "https://blog-api-qyqz.onrender.com/addblog",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(blogData),
+          mode: "cors",
+        }
+      );
 
       if (!response.ok) {
         const errorData = await response.json();

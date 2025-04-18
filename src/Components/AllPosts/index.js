@@ -10,7 +10,7 @@ const AllPosts = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = "http://localhost:5000/getAllPosts";
+      const url = "https://blog-api-qyqz.onrender.com/getAllPosts";
       const options = {
         method: "GET",
       };
