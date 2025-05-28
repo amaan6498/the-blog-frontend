@@ -14,7 +14,7 @@ const Login = () => {
     if (token) {
       navigate("/");
     }
-  }, [navigate]); // `navigate` is added to the dependency array
+  }, [navigate]);
 
   const onLoginSuccess = (responseData) => {
     Cookies.set("jwt_token", responseData.token);
@@ -32,11 +32,9 @@ const Login = () => {
 
   const onSubmitLoginForm = async (event) => {
     event.preventDefault();
-    const data = {
-      username: username,
-      password: password,
-    };
+    const data = { username, password };
     console.log(data);
+
     try {
       const response = await fetch("https://blog-api-qyqz.onrender.com/login", {
         method: "POST",
@@ -44,14 +42,13 @@ const Login = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
-        mode: "cors", // Explicitly enabling CORS
+        mode: "cors",
       });
+
       if (!response.ok) {
-        // If the response is not OK, show an error message
         const errorData = await response.json();
         setError(errorData);
       } else {
-        // If login is successful, showing the token from the response
         const responseData = await response.json();
         console.log(responseData);
         console.log("Login successful, token:", responseData.token);
@@ -63,8 +60,21 @@ const Login = () => {
         errorMessage: "A network error occurred. Please try again later.",
       });
     }
-    setUserName("");
-    setPassword("");
+  };
+
+  const onGuestLogin = async (event) => {
+    event.preventDefault(); // Prevent the form from submitting when guest login is clicked
+
+    const guestUserName = "arman@gmail.com";
+    const guestPassword = "getjar123";
+
+    console.log("Guest login credentials:", guestUserName, guestPassword);
+
+    setUserName(guestUserName);
+    setPassword(guestPassword);
+
+    // Submit the form automatically
+    onSubmitLoginForm(new Event("submit"));
   };
 
   return (
@@ -101,8 +111,15 @@ const Login = () => {
         <button type="submit" className="button-login">
           Login
         </button>
+        <button
+          type="button"
+          className="button-login mg-1"
+          onClick={onGuestLogin}
+        >
+          Continue as Guest
+        </button>
         <p className="signup-para">
-          <Link to="/signup">don't have an account, signup</Link>
+          <Link to="/signup">Don't have an account? Signup</Link>
         </p>
         {error && (
           <p className="error-message" style={{ color: "red" }}>
@@ -113,4 +130,5 @@ const Login = () => {
     </div>
   );
 };
+
 export default Login;

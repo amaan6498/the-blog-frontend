@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ChatBot from "../Chatbot";
 import Cookies from "js-cookie";
 import "./index.css";
 
@@ -145,6 +146,7 @@ const AddBlogs = () => {
           </p>
         )}
       </form>
+      <ChatBot />
     </div>
   );
 };

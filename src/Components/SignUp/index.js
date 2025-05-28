@@ -34,6 +34,7 @@ const Signup = () => {
       password: password,
     };
 
+    // http://localhost:5000/register
     try {
       const response = await fetch(
         "https://blog-api-qyqz.onrender.com/register",

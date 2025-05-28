@@ -1,3 +1,4 @@
+import ChatBot from "../Chatbot";
 import "./index.css";
 
 const About = () => {
@@ -32,6 +33,7 @@ const About = () => {
           reach an engaged audience eager to hear what you have to say.
         </p>
       </>
+      <ChatBot />
     </div>
   );
 };

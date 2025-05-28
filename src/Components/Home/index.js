@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HorizontalCard from "../HorizontalCard";
+import ChatBot from "../Chatbot";
 import "./index.css";
 
 const cardInfo = [
@@ -86,6 +87,7 @@ const Home = () => {
           </Link>
         ))}
       </div>
+      <ChatBot />
     </div>
   );
 };

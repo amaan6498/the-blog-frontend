@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HorizontalCard from "../HorizontalCard";
+import ChatBot from "../Chatbot";
 
 import "./index.css";
 
@@ -11,6 +12,7 @@ const AllPosts = () => {
   useEffect(() => {
     const fetchData = async () => {
       const url = "https://blog-api-qyqz.onrender.com/getAllPosts";
+      // const url = "http://localhost:5000/getAllPosts";
       const options = {
         method: "GET",
       };
@@ -65,6 +67,7 @@ const AllPosts = () => {
           )}
         </div>
       )}
+      <ChatBot />
     </div>
   );
 };

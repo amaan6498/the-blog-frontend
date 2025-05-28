@@ -55,6 +55,7 @@ body {
     margin-bottom: 0.5rem;
     box-sizing: border-box;
     background-color: transparent;
+    color: #f4f4f4;
   }
   
   .signup-form-input:focus {
@@ -151,6 +152,7 @@ body {
   
     .signup-form {
       font-size: 0.9rem;
+      color: #f4f4f4;
     }
   
     .signup-form-input {

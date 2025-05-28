@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import ChatBot from "../Chatbot";
+
 import "./index.css";
 
 const BlogPost = () => {
@@ -11,6 +13,7 @@ const BlogPost = () => {
   useEffect(() => {
     const fetchData = async () => {
       const url = "https://blog-api-qyqz.onrender.com/getAllPosts";
+      // const url = "http://localhost:5000/getAllPosts";
       const options = {
         method: "GET",
       };
@@ -75,6 +78,7 @@ const BlogPost = () => {
           </span>
         ))}
       </div>
+      <ChatBot />
     </div>
   );
 };
